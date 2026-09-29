@@ -1,0 +1,17 @@
+[package]
+name = "swdocs"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = { version = "4.6.7", features = ["derive"] }
+globset = "0.4.20"
+leptos = { version = "0.8.20", features = ["ssr"] }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.151"
+
+[profile.release]
+opt-level = 3
+lto = true
+strip = "debuginfo"
+codegen-units = 1
