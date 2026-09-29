@@ -41,9 +41,9 @@ swdocs -t "*oauth*" -p "/api/private"
 ```
 In this example:
 
--t "*oauth*" ignores tags matching *oauth*
+`-t "*oauth*"` ignores tags matching `*oauth*`
 
--p "/api/private" ignores the /api/private path
+`-p "/api/private"` ignores the `/api/private` path
 
 ## The basic idea is simple:
 
